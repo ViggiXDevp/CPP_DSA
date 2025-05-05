@@ -67,5 +67,18 @@ int main(){
     cout<<"Bitwise and operator: "<<(a & b)<<endl;
     cout<<"Bitwise or operator: "<<(a | b)<<endl;
     cout<<"Bitwise ex-or operator: "<<(a ^ b)<<endl;
+    cout<<"Bitwise left shift operator: "<<(10<<2)<<endl;    // a * (2^b) = a<<b
+    cout<<"Bitwise right shift operator: "<<(10>>1)<<endl;   // a / (2^b) = a>>b
+
+    // Data type modifiers
+    cout<<sizeof(int)<<endl;
+    cout<<sizeof(long int)<<endl;
+    cout<<sizeof(short int)<<endl;
+    cout<<sizeof(long long int)<<endl;
+
+    //Operator precedence
+    int a = 9, b = 7;
+    int c = (((a*8)+98)-b);  // multiplicatio ,division,remainder,addition,subtraction//
+    cout<<c;                 //associativity is from right to left
     return 0;
 }
